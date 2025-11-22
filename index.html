@@ -1,0 +1,98 @@
+<!DOCTYPE html>
+<html lang="zh-Hant">
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>台南景點 StoryMap 主頁</title>
+    <style>
+        body {
+            margin: 0;
+            font-family: "Noto Serif TC", serif;
+            background-color: #f4e9d8;
+            color: #4a3f35;
+        }
+
+        header {
+            background-color: #d8c3a5;
+            padding: 20px;
+            text-align: center;
+            box-shadow: 0 2px 5px rgba(0,0,0,0.2);
+        }
+
+        header h1 {
+            margin: 0;
+            font-size: 2.2rem;
+            letter-spacing: 2px;
+        }
+
+        .intro {
+            max-width: 900px;
+            margin: 30px auto;
+            text-align: center;
+            line-height: 1.8;
+            font-size: 1.1rem;
+        }
+
+        .storymap-container {
+            max-width: 1200px;
+            margin: 40px auto;
+            padding: 10px;
+            border: 3px solid #bfa68b;
+            background-color: #fff8ef;
+            box-shadow: 0 4px 10px rgba(0,0,0,0.15);
+            border-radius: 8px;
+            transition: transform 0.3s ease;
+        }
+
+        .storymap-container:hover {
+            transform: scale(1.01);
+        }
+
+        iframe {
+            width: 100%;
+            height: 800px;
+            border: none;
+        }
+
+        .button-area {
+            text-align: center;
+            margin-bottom: 50px;
+        }
+
+        .btn {
+            display: inline-block;
+            background-color: #b8926a;
+            color: #fff;
+            padding: 12px 25px;
+            text-decoration: none;
+            font-size: 1rem;
+            border-radius: 6px;
+            transition: background-color 0.3s ease;
+        }
+
+        .btn:hover {
+            background-color: #8b6b4c;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>台南景點 StoryMap 主頁</h1>
+    </header>
+
+    <section class="intro">
+        <p>
+            歡迎來到台南景點互動地圖！本頁以復古風格呈現，讓你以更沉浸的方式探索台南的文化、歷史與城市風景。<br>
+            下方呈現的是由 StoryMapJS 製作的互動式地圖，滑動即可瀏覽各景點介紹。
+        </p>
+    </section>
+
+    <section class="storymap-container">
+        <iframe src="https://uploads.knightlab.com/storymapjs/bf4c54e3623bb110f550cbf76b241aa7/ikea/index.html"></iframe>
+    </section>
+
+    <div class="button-area">
+        <a href="#top" class="btn">回到頂部</a>
+    </div>
+</body>
+</html>
